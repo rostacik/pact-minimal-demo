@@ -1,0 +1,15 @@
+{
+  "name": "pact-minimal-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small Pact consumer-driven contract testing example",
+  "type": "module",
+  "scripts": {
+    "test:consumer": "node --test test/consumer.pact.test.js",
+    "test:provider": "node --test test/provider.pact.test.js",
+    "test": "npm run test:consumer && npm run test:provider"
+  },
+  "dependencies": {
+    "@pact-foundation/pact": "^16.0.0"
+  }
+}
